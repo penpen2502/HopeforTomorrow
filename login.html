@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./loginpage.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Login Form -->
+        <div id="login-section">
+            <h1>Log In</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <p class="toggle-text">Don't have an account? <a class="toggle-link" id="show-signup">Sign up</a></p>
+        </div>
+        
+        <!-- Signup Form -->
+        <div id="signup-section" class="hidden">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="new-username">Username</label>
+                    <input type="text" id="new-username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="toggle-text">Already have an account? <a class="toggle-link" id="show-login">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="login.js">
+    </script>
+</body>
+</html>
